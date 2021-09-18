@@ -32,4 +32,7 @@ article{
 }
 .orange{
     color: orange;
+} 
+#home{
+    display: none;
 }
