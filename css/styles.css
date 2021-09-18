@@ -1,0 +1,32 @@
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.brown{
+    color: rgb(187, 150, 47);
+}
+.cen{
+    text-align: center;
+}
+#flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+article{
+    border: 2px solid black;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.col{
+    width: 70vw;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
