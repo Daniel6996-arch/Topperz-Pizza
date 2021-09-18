@@ -7,3 +7,17 @@
     margin: 1vw;
     border: 1px solid black;
 }
+.flex img{
+    width: 25vw;
+    height: 10vw;
+}
+.topping{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.border-bottom{
+    background-color: rgb(179, 159, 159);
+}
+.flex h3{
+    text-decoration: underline;
+}
