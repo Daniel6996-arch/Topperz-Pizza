@@ -22,11 +22,14 @@ article{
     margin-right: 10vw;
 }
 .col{
-    width: 70vw;
+    width: 55vw;
 }
 .flex-row{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+.orange{
+    color: orange;
 }
