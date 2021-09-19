@@ -39,7 +39,7 @@ $("document").ready(function(){
    if (selected.length > 0) {
 
     $("#largePizza").append("<p>" + "Selected topping(s): " + selected.join(",") + "</p>");
-   }
+   } 
    };
 
    //var largeCrust = $("#large-crust-select  option:selected").text(); Why doesn't this code work!!??
@@ -54,7 +54,7 @@ $("document").ready(function(){
         price = 19;
     }
     items($("#largeTopping input[type=checkbox]:checked"));
-    $("#largePizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " large" + " with" + selected.join(",") + " topping(s)" + "</p>")
+    $("#largePizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for large pizza." + " The price is $" + price + "." + "</p>")
   });
 
   $("#submitTwo").click(function(){
@@ -68,7 +68,7 @@ $("document").ready(function(){
         price = 16;
     }
    items($("#mediumTopping input[type=checkbox]:checked"))
-   $("#mediumPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " medium" + " with" + selected.join(",") + "topping(s)" + "</p>")
+   $("#mediumPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for medium pizza." + " The price is $" + price + "." + "</p>")
   });
 
   $("#submitThree").click(function(){
@@ -85,7 +85,7 @@ $("document").ready(function(){
         cheeseprice =1;
     }
     items($("#smallTopping input[type=checkbox]:checked"))
-    $("#smallPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " small" + " with" + selected.join(",") + " topping(s)" + "</p>")
+    $("#smallPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for small pizza." + " The price is $" + price + "." + "</p>")
   });
 
 });
