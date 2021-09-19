@@ -25,10 +25,23 @@ $("document").ready(function(){
        prompt("Enter your location")
    })
    
-   var largeCrust = $("#large-crust-select  option:selected").text();
+   //var largeCrust = $("#large-crust-select  option:selected").text(); Why doesn't this code work!!??
   $("#submitOne").click(function(){
-    console.log(largeCrust)
+    console.log($("#large-crust-select  option:selected").text());
+    if($("#large-crust-select  option:selected").text() == "Cripsy"){
+        //console.log("shake")
+
+    }
+    if($("#large-crust-select  option:selected").text() == "Stuffed"){
+        //console.log("bake")
+
+    }
+    if($("#large-crust-select  option:selected").text() == "Gluten-Free"){
+        //console.log("shake and bake")
+
+    }
   })
+
 
 
 });
