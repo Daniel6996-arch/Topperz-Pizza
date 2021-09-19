@@ -13,7 +13,7 @@
         <title>Topperz Pizza</title>
     </head>
 <body>
-    <div class="container">
+    <div class="container" id="top">
         <h1 class="cen"><span class="red">TOPP</span><span class="brown">ERZ </span><span class="green">PIZZA</span></h1>
        </div>
        <div class="cen container">
@@ -76,7 +76,7 @@
                     <h4 class="border-bottom">Choose Topping</h4>
                     <img src="images/pizzatopping3.jpeg.jpeg">
                     <p>Large pizza topping name and price</p>
-                    <table class="align-left" id="LargeTopping">
+                    <table class="align-left" id="largeTopping">
                         <tr>
                             <td><input type="checkbox" value="cheeseLarge">Cheese <span class="margin-left2">price $7</span><br></td>
                         </tr>
@@ -88,7 +88,7 @@
                        </tr>
                     </table>
                 </div>
-                <button id="submitOne">Submit Order</button>
+                <a href="#top"><button id="submitOne">Submit Order</button></a>
             </div>
         </div>
         <div class="container cen width">
@@ -141,7 +141,7 @@
                        </tr>
                     </table>
                 </div>
-                <button id="submitTwo">Submit Order</button>
+                <a href="#top"><button id="submitTwo">Submit Order</button></a>
             </div>
         </div>
         <div class="container cen width">
@@ -194,7 +194,7 @@
                        </tr>
                     </table>
                 </div>
-                <button id="submitThree">Submit Order</button>
+                <a href="#top"><button id="submitThree">Submit Order</button></a>
             </div>
         </div>
     </div>
@@ -202,9 +202,9 @@
     <div class="order">
        <div class="cen">
         <h1>Your have ordered:</h1>
-        <p id="largePizza"></p>
-        <p id="mediumPizza"></p>
-        <p id="smallPizza"></p>
+        <div id="largePizza"></div>
+        <div id="mediumPizza"></div>
+        <div id="smallPizza"></div>
        </div>
        <div class="cen">
            <h2>Get your order delivered to your location around Nairobi at a reasonable fee.</h2>

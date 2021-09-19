@@ -38,7 +38,7 @@ $("document").ready(function(){
    });
    if (selected.length > 0) {
 
-    $("#largePizza").text("Selected topping(s): " + selected.join(","));
+    $("#largePizza").append("<p>" + "Selected topping(s): " + selected.join(",") + "</p>");
    }
    };
 
@@ -54,7 +54,7 @@ $("document").ready(function(){
         price = 19;
     }
     items($("#largeTopping input[type=checkbox]:checked"));
-    $("#largePizza").text("Selected crust is: " + $("#large-crust-select  option:selected").text());
+    $("#largePizza").append("<p>" + "Selected crust is: " + $("#small-crust-select  option:selected").text() + "</p>")
   });
 
   $("#submitTwo").click(function(){
@@ -68,7 +68,7 @@ $("document").ready(function(){
         price = 16;
     }
    items($("#mediumTopping input[type=checkbox]:checked"))
-   $("#mediumPizza").text("Selected crust is: " + $("#medium-crust-select  option:selected").text())
+   $("#mediumPizza").append("<p>" + "Selected crust is: " + $("#small-crust-select  option:selected").text() + "</p>")
   });
 
   $("#submitThree").click(function(){
@@ -85,7 +85,7 @@ $("document").ready(function(){
         cheeseprice =1;
     }
     items($("#smallTopping input[type=checkbox]:checked"))
-    $("#smallPizza").text("Selected crust is: " + $("#small-crust-select  option:selected").text())
+    $("#smallPizza").append("<p>" + "Selected crust is: " + $("#small-crust-select  option:selected").text() + "</p>")
   });
 
 });
