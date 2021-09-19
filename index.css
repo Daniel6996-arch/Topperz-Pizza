@@ -32,3 +32,9 @@ th, td{
 .menu, .order, .checkOut{
     display: none;
 }
+.align-left{
+    text-align: left;
+}
+.margin-left2{
+    margin-left: 3vw;
+}

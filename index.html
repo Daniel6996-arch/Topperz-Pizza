@@ -76,29 +76,11 @@
                     <h4 class="border-bottom">Choose Topping</h4>
                     <img src="images/pizzatopping3.jpeg.jpeg">
                     <p>Large pizza topping name and price</p>
-                    <table>
-                        <tr>
-                            <th>Topping name</th>
-                            <th>price</th>
-                        </tr>
-                        <tr>
-                            <td>Cheese</td>
-                            <td>$7</td>
-                        </tr>
-                        <tr>
-                            <td>Pepperoni</td>
-                            <td>$5</td>
-                        </tr>
-                        <tr>
-                            <td>Italiano</td>
-                            <td>$3</td>
-                        </tr>
-                    </table>
-                    <select>
-                        <option>Cheese</option>
-                        <option>Pepperoni</option>
-                        <option>Italiano</option>
-                    </select>
+                   <form class="align-left">
+                       <input type="checkbox">Cheese <span class="margin-left2">price $7</span><br>
+                       <input type="checkbox">Pepperoni <span class="margin-left2">price $5</span><br>
+                       <input type="checkbox">Italiano <span class="margin-left2">price $3</span>
+                   </form>
                 </div>
                 <button id="submitOne">Submit Order</button>
             </div>
@@ -141,29 +123,11 @@
                     <h4 class="border-bottom">Choose Topping</h4>
                     <img src="images/pizzatopping2.jpeg">
                     <p>Medium pizza topping name and price</p>
-                    <table>
-                        <tr>
-                            <th>Topping name</th>
-                            <th>price</th>
-                        </tr>
-                        <tr>
-                            <td>Cheese</td>
-                            <td>$5</td>
-                        </tr>
-                        <tr>
-                            <td>Pepperoni</td>
-                            <td>$3</td>
-                        </tr>
-                        <tr>
-                            <td>Italiano</td>
-                            <td>$2</td>
-                        </tr>
-                    </table>
-                    <select>
-                        <option>Cheese</option>
-                        <option>Pepperoni</option>
-                        <option>Italiano</option>
-                    </select>
+                    <form class="align-left">
+                        <input type="checkbox">Cheese <span class="margin-left2">price $5</span><br>
+                        <input type="checkbox">Pepperoni <span class="margin-left2">price $3</span><br>
+                        <input type="checkbox">Italiano <span class="margin-left2">price $2</span>
+                    </form>
                 </div>
                 <button id="submitTwo">Submit Order</button>
             </div>
@@ -206,29 +170,11 @@
                     <h4 class="border-bottom">Choose Topping</h4>
                     <img src="images/pizzatopping1.jpeg">
                     <p>Small pizza topping name and price</p>
-                    <table>
-                        <tr>
-                            <th>Topping name</th>
-                            <th>price</th>
-                        </tr>
-                        <tr>
-                            <td>Cheese</td>
-                            <td>$3</td>
-                        </tr>
-                        <tr>
-                            <td>Pepperoni</td>
-                            <td>$2</td>
-                        </tr>
-                        <tr>
-                            <td>Italiano</td>
-                            <td>$1</td>
-                        </tr>
-                    </table>
-                    <select id="">
-                        <option>Cheese</option>
-                        <option>Pepperoni</option>
-                        <option>Italiano</option>
-                    </select>
+                    <form class="align-left">
+                        <input type="checkbox">Cheese <span class="margin-left2">price $3</span><br>
+                        <input type="checkbox">Pepperoni <span class="margin-left2">price $2</span><br>
+                        <input type="checkbox">Italiano <span class="margin-left2">price $1</span>
+                    </form>
                 </div>
                 <button id="submitThree">Submit Order</button>
             </div>
@@ -238,6 +184,9 @@
     <div class="order">
        <div class="cen">
         <h1>Your have ordered:</h1>
+        <p id="largePizza"></p>
+        <p id="mediumPizza"></p>
+        <p id="smallPizza"></p>
        </div>
        <div class="cen">
            <h2>Get your order delivered to your location around Nairobi at a reasonable fee.</h2>
