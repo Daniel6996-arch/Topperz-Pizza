@@ -21,15 +21,11 @@ $("document").ready(function(){
        $(".menu").hide();
        $("#home").hide();
    });
-   $(".show-toppingTwo").click(function(){
-    $(".topping-Two").toggle();
-   });
-   $(".show-toppingOne").click(function(){
-    $(".topping-One").toggle();
-   });
+   
+   var largeCrust = $("#large-crust-select  option:selected").text();
+  $("#submitOne").click(function(){
+    console.log(largeCrust)
+  })
 
-   var optionLarge = $("#crust-large option").val();
-   $("#crust-large option").click(function(){
-    console.log("love");
-   })
+
 });
