@@ -37,15 +37,15 @@ $("document").ready(function(){
     });
     if(selected == "cheese"){
         //console.log("large");
-        $("#topp").append("<p>" + "Selected topping(s) is cheese for your pizza. The price is $7." + "</p>");
+        $("#topp").append("<p>" + "Selected topping(s) is cheese for your pizza. The price of topping is $7." + "</p>");
     }
     if(selected == "pepperoni"){
         //console.log("large");
-        $("#topp").append("<p>" + "Selected topping(s) is pepperoni for your pizza. The price is $5." + "</p>");
+        $("#topp").append("<p>" + "Selected topping(s) is pepperoni for your pizza. The price of topping is $5." + "</p>");
     }
     if(selected == "italiano"){
         //console.log("large");
-        $("#topp").append("<p>" + "Selected topping(s) is italiano for your pizza. The price is $3." + "</p>");
+        $("#topp").append("<p>" + "Selected topping(s) is italiano for your pizza. The price of topping is $3." + "</p>");
     }/*
      if(selected == "cheese", "pepperoni"){
      //console.log("large");
@@ -79,7 +79,7 @@ $("document").ready(function(){
      }
      
      items($("#largeTopping input[type=checkbox]:checked"));
-     $("#largePizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for large pizza." + " The price is $" + price + "." + "</p>")
+     $("#largePizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for large pizza." + " The price of crust is $" + price + "." + "</p>")
    });
  
    $("#submitTwo").click(function(){
@@ -93,7 +93,7 @@ $("document").ready(function(){
          price = 16;
      }
     items($("#mediumTopping input[type=checkbox]:checked"))
-    $("#mediumPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for medium pizza." + " The price is $" + price + "." + "</p>")
+    $("#mediumPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for medium pizza." + " The price of crust is $" + price + "." + "</p>")
    });
  
    $("#submitThree").click(function(){
@@ -110,7 +110,7 @@ $("document").ready(function(){
          cheeseprice =1;
      }
      items($("#smallTopping input[type=checkbox]:checked"))
-     $("#smallPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for small pizza." + " The price is $" + price + "." + "</p>")
+     $("#smallPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for small pizza." + " The price of crust is $" + price + "." + "</p>")
    });
  
  });
