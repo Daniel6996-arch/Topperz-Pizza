@@ -27,7 +27,6 @@ $("document").ready(function(){
    
    //var largeCrust = $("#large-crust-select  option:selected").text(); Why doesn't this code work!!??
   $("#submitOne").click(function(){
-    //console.log($("#large-crust-select  option:selected").text());
     if($("#large-crust-select  option:selected").text() == "Cripsy"){
         //console.log("shake")
     }
@@ -39,7 +38,6 @@ $("document").ready(function(){
     }
   })
   $("#submitTwo").click(function(){
-    //console.log($("#large-crust-select  option:selected").text());
     if($("#medium-crust-select  option:selected").text() == "Cripsy"){
         console.log("shake")
     }
@@ -51,7 +49,6 @@ $("document").ready(function(){
     }
   })
   $("#submitThree").click(function(){
-    //console.log($("#large-crust-select  option:selected").text());
     if($("#small-crust-select  option:selected").text() == "Cripsy"){
         //console.log("shake")
     }
