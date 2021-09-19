@@ -40,6 +40,17 @@ $("document").ready(function(){
 
     $("#topp").append("<p>" + "Selected topping(s): " + selected.join(",") + "</p>");
    } 
+   if(selected == "cheeseLarge"){
+       //console.log("large");
+       $("#topp").append("<p>" + "Selected topping(s) is cheese for large pizza." + "</p>");
+   }
+   if(selected == "cheeseLarge, pepperoniLarge"){
+    //console.log("large");
+   }
+   if(selected == "cheeseLarge, pepperoniLarge, italianoLarge"){
+    //console.log("large");
+   }
+
    };
 
    //var largeCrust = $("#large-crust-select  option:selected").text(); Why doesn't this code work!!??
@@ -53,6 +64,7 @@ $("document").ready(function(){
     if($("#large-crust-select  option:selected").text() == "Gluten-Free"){
         price = 19;
     }
+    
     items($("#largeTopping input[type=checkbox]:checked"));
     $("#largePizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for large pizza." + " The price is $" + price + "." + "</p>")
   });

@@ -10,7 +10,7 @@
 *The app should be able to show the user what they have ordered.  
 *The user should be able to see the cost for their order.  
 ## link
-https://daniel6996-arch.github.io/Topperz-pizza/
+https://daniel6996-arch.github.io/Topperz-Pizza/
 ## Setup/Installation Requirements
 *This website best works on latest version browsers that support javascript.   
 *Older browsers my work ineffectively.   
