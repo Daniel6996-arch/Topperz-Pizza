@@ -35,20 +35,35 @@ $("document").ready(function(){
    });
    if (selected.length > 0) {
 
-    alert("Selected values: " + selected.join(","));
+    $("#largePizza").text("Selected topping(s): " + selected.join(","));
    // alert(selected)
    }
    };
 
    //var largeCrust = $("#large-crust-select  option:selected").text(); Why doesn't this code work!!??
   $("#submitOne").click(function(){
-      priceLarge();  
+    if($("#large-crust-select  option:selected").text() == "Cripsy"){
+        //console.log("shake")
+       price = 15;
+        //$("#largePizza").text("Cripsy" + " " + price);
+    }
+    if($("#large-crust-select  option:selected").text() == "Stuffed"){
+        //console.log("bake")
+       price = 17;
+    }
+    if($("#large-crust-select  option:selected").text() == "Gluten-Free"){
+        //console.log("shake and bake")
+        price = 19;
+    }
+    items($("#largeTopping input[type=checkbox]:checked"));
+    $("#largePizza").text("Selected crust is: " + $("#large-crust-select  option:selected").text());
+    //console.log(price);
+
   })
   $("#submitTwo").click(function(){
-    if($("#medium-crust-select  option:selected").text() == "Cripsy" && items($("#mediumTopping input[type=checkbox]:checked") == "cheeseSmall" )){
+    if($("#medium-crust-select  option:selected").text() == "Cripsy"){
         //console.log("shake")
         price = 13;
-        cheeseprice = 3;
     }
     if($("#medium-crust-select  option:selected").text() == "Stuffed"){
        // console.log("bake")
@@ -60,6 +75,8 @@ $("document").ready(function(){
     }
     console.log(price);
    console.log(cheeseprice);
+   items($("#mediumTopping input[type=checkbox]:checked"))
+   $("#mediumPizza").text("Selected crust is: " + $("#medium-crust-select  option:selected").text())
   })
   $("#submitThree").click(function(){
     if($("#small-crust-select  option:selected").text() == "Cripsy"){
@@ -77,26 +94,15 @@ $("document").ready(function(){
         price = 15;
         cheeseprice =1;
     }
-    console.log(price);
-  console.log(cheeseprice)
-    console.log(selected);
+    items($("#smallTopping input[type=checkbox]:checked"))
+    $("#smallPizza").text("Selected crust is: " + $("#small-crust-select  option:selected").text())
+    //console.log(price);
+    //console.log(cheeseprice)
+    //console.log(selected);
     
   })
 
 });
  var priceLarge = function(){
-    if($("#large-crust-select  option:selected").text() == "Cripsy"){
-        //console.log("shake")
-       price = 15;
-        //$("#largePizza").text("Cripsy" + " " + price);
-    }
-    if($("#large-crust-select  option:selected").text() == "Stuffed"){
-        //console.log("bake")
-       price = 17;
-    }
-    if($("#large-crust-select  option:selected").text() == "Gluten-Free"){
-        //console.log("shake and bake")
-        price = 19;
-    }
-    console.log(price);
+   
  };
