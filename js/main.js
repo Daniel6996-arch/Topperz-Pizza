@@ -28,6 +28,7 @@ $("document").ready(function(){
     });
  
     var price = 0;
+    var deliveryFee = 2;
     var cheeseprice = 0;
  
     var items = function (selection){
@@ -70,28 +71,38 @@ $("document").ready(function(){
    $("#submitOne").click(function(){
      if($("#large-crust-select  option:selected").text() == "Cripsy"){
         price = 15;
+        cheeseprice = 5;
      }    
      if($("#large-crust-select  option:selected").text() == "Stuffed"){
         price = 17;
+        cheeseprice = 5;
      }
      if($("#large-crust-select  option:selected").text() == "Gluten-Free"){
          price = 19;
+         cheeseprice = 5;
      }
-     
+     var finalFee = price + deliveryFee + cheeseprice;
+     $("#final-fee").text(finalFee);
      items($("#largeTopping input[type=checkbox]:checked"));
      $("#largePizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for large pizza." + " The price of crust is $" + price + "." + "</p>")
+     $("")
    });
  
    $("#submitTwo").click(function(){
      if($("#medium-crust-select  option:selected").text() == "Cripsy"){
          price = 13;
+         cheeseprice = 5;
      }
      if($("#medium-crust-select  option:selected").text() == "Stuffed"){
         price = 14;
+        cheeseprice = 5;
      }
      if($("#medium-crust-select  option:selected").text() == "Gluten-Free"){
          price = 16;
+         cheeseprice = 5;
      }
+     var finalFee = price + deliveryFee + cheeseprice;
+     $("#final-fee").text(finalFee);
     items($("#mediumTopping input[type=checkbox]:checked"))
     $("#mediumPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for medium pizza." + " The price of crust is $" + price + "." + "</p>")
    });
@@ -99,16 +110,18 @@ $("document").ready(function(){
    $("#submitThree").click(function(){
      if($("#small-crust-select  option:selected").text() == "Cripsy"){
          price = 10;
-         cheeseprice = 3;
+         cheeseprice = 5;
      }
      if($("#small-crust-select  option:selected").text() == "Stuffed"){
          price = 13;
-         cheeseprice = 2;
+         cheeseprice = 5;
      }
      if($("#small-crust-select  option:selected").text() == "Gluten-Free"){
          price = 15;
-         cheeseprice =1;
+         cheeseprice = 5;
      }
+     var finalFee = price + deliveryFee + cheeseprice;
+     $("#final-fee").text(finalFee);
      items($("#smallTopping input[type=checkbox]:checked"))
      $("#smallPizza").append("<p>" + "Selected crust is " + $("#small-crust-select  option:selected").text() + " for small pizza." + " The price of crust is $" + price + "." + "</p>")
    });
