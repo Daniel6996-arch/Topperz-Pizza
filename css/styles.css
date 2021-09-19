@@ -34,3 +34,12 @@ article{
 .orange{
     color: orange;
 } 
+#largePizza{
+    background-color: palegreen;
+}
+#smallPizza{
+    background-color: paleturquoise;
+}
+#mediumPizza{
+    background-color: rgb(131, 233, 233);
+}

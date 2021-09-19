@@ -38,7 +38,7 @@ $("document").ready(function(){
    });
    if (selected.length > 0) {
 
-    $("#largePizza").append("<p>" + "Selected topping(s): " + selected.join(",") + "</p>");
+    $("#topp").append("<p>" + "Selected topping(s): " + selected.join(",") + "</p>");
    } 
    };
 
