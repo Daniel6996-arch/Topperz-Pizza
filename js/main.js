@@ -37,15 +37,15 @@ $("document").ready(function(){
     });
     if(selected == "cheese"){
         //console.log("large");
-        $("#topp").append("<p>" + "Selected topping(s) is cheese for your pizza." + "</p>");
+        $("#topp").append("<p>" + "Selected topping(s) is cheese for your pizza. The price is $7." + "</p>");
     }
     if(selected == "pepperoni"){
         //console.log("large");
-        $("#topp").append("<p>" + "Selected topping(s) is pepperoni for your pizza." + "</p>");
+        $("#topp").append("<p>" + "Selected topping(s) is pepperoni for your pizza. The price is $5." + "</p>");
     }
     if(selected == "italiano"){
         //console.log("large");
-        $("#topp").append("<p>" + "Selected topping(s) is italiano for your pizza." + "</p>");
+        $("#topp").append("<p>" + "Selected topping(s) is italiano for your pizza. The price is $3." + "</p>");
     }/*
      if(selected == "cheese", "pepperoni"){
      //console.log("large");
