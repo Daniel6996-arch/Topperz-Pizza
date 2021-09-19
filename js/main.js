@@ -21,6 +21,9 @@ $("document").ready(function(){
        $(".menu").hide();
        $("#home").hide();
    });
+   $("#delivery").click(function(){
+       prompt("Enter your location")
+   })
    
    var largeCrust = $("#large-crust-select  option:selected").text();
   $("#submitOne").click(function(){
