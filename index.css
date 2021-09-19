@@ -29,3 +29,6 @@ th, td{
     border: 1px solid black;
     width: 10vw;
 }
+.menu, .order, .checkOut{
+    display: none;
+}

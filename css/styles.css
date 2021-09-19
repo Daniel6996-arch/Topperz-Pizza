@@ -34,9 +34,3 @@ article{
 .orange{
     color: orange;
 } 
-#home{
-    display: none;
-}
-.topping-One, .topping-Two, .topping-Three, .crust-Three, .crust-two, .crust-One{
-    display: none;
-}
