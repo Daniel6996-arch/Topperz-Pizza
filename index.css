@@ -21,3 +21,11 @@
 .flex h3{
     text-decoration: underline;
 }
+tr{
+    border: 1px solid black;
+    
+}
+th, td{
+    border: 1px solid black;
+    width: 10vw;
+}
