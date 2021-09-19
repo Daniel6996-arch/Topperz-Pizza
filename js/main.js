@@ -1,16 +1,25 @@
 
 $("document").ready(function(){
-   $(".show-crustOne").click(function(){
-       $(".crust-One").toggle();
+   $(".home").click(function(){
+       location.reload();
    });
-   $(".show-crustTwo").click(function(){
-    $(".crust-two").toggle();
+   $(".show-menu").click(function(){
+       $(".menu").show();
+       $("#home").hide();
+       $(".order").hide();
+       $(".checkOut").hide();
    });
-   $(".show-crustThree").click(function(){
-    $(".crust-Three").toggle();
+   $(".show-order").click(function(){
+       $(".order").show();
+       $(".menu").hide();
+       $("#home").hide();
+       $(".checkOut").hide();
    });
-   $(".show-toppingThree").click(function(){
-       $(".topping-Three").toggle();
+   $(".show-checkout").click(function(){
+       $(".checkOut").show();
+       $(".order").hide();
+       $(".menu").hide();
+       $("#home").hide();
    });
    $(".show-toppingTwo").click(function(){
     $(".topping-Two").toggle();
