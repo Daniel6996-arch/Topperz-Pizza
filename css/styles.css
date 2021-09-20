@@ -1,5 +1,10 @@
 body{
    color: black;
+   font-size: 1.5rem;
+}
+.body{
+    height: 30vw;
+    padding-top: ;
 }
 .red{
     color: red;

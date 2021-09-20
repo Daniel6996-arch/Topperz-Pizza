@@ -1,11 +1,11 @@
 $("document").ready(function(){
     var imageUrl = "images/pizzeria.jpeg";
-    $("body").css("background-image","url("+ imageUrl +")");
-    $("body").css("background-position","center");
-    $("body").css("background-repeat","no-repeat");
-    $("body").css("background-attachment","fixed");
-    $("body").css("background-size","cover");
-    $("body").css("linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))");
+    $(".body").css("background-image","url("+ imageUrl +")");
+    $(".body").css("background-position","center");
+    $(".body").css("background-repeat","no-repeat");
+    $(".body").css("background-attachment","fixed");
+    $(".body").css("background-size","cover");
+    $(".body").css("linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))");
 
     $(".home").click(function(){
         location.reload();
