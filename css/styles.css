@@ -16,3 +16,6 @@ img{
     flex-direction: row;
     justify-content: space-between;
 }
+.checkOut, .order, #menu{
+    display: none;
+}
