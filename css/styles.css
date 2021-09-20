@@ -1,52 +1,18 @@
-body{
-   color: black;
-   font-size: 1.5rem;
-}
-.red{
-    color: red;
-}
-.green{
-    color: green;
-}
-.brown{
-    color: rgb(187, 150, 47);
+.down{
+    margin-bottom: 2vw;
 }
 .cen{
     text-align: center;
 }
+img{
+    width: 20vw;
+    height: 20vh;
+}
+.btn-primary{
+    margin-top: 2vw;
+}
 #flex-row{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-article{
-    border: 2px solid black;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-.col{
-    width: 80vw;
-    margin-top: 2vw;
-}
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.orange{
-    color: orange;
-} 
-#largePizza{
-    background-color: rgb(178, 243, 178);
-}
-#smallPizza{
-    background-color: paleturquoise;
-}
-#mediumPizza{
-    background-color: rgb(131, 233, 233);
-}
-#topp{
-    background-color: rgb(80, 158, 158);
+    justify-content: space-between;
 }

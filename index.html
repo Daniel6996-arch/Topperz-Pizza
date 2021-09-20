@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/index.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/app.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-grid.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -36,171 +36,155 @@
                <p>I started to crawl off then I remebered my leftover from <span class="green">Topperz-Pizza</span> and I pulled off the salami pepperoni and and ancories and placed them on the CD tray (which no one used those days). I hit the close button and watched the smelly part of my delicious dinner slideaway. Boone would have a great time wondering. Where is that smell coming from?</p>
            </article>
        </div>
-       <div class="container" id="menu">
-    <div class="menu">
-        <h1 class="cen">Our menu</h1>
-    <div class="flex">
-        <div class="container cen width">
-            <div class="border-bottom">
-                <h3>Large</h3>
-                <h4>Choose your crust and topping</h4>
+       <div class="">
+        <div class="">
+            <div class="row">
+                <form class="col pizza border p-5 m-3">
+                    <img src="images/pizza1.jpg">
+                    <div class= "cen">
+                        <p>Don't be limited to other people's imaginations of a pizza crust!</p>
+                    </div>
+                    <div class="border-bottom cen">Select crust and size</div>
+                    <div>
+                        <select name="crust" class="form-select form-select-ms" aria-label=".form-select-sm example">
+                            <option selected>-- Crust --</option>
+                            <option value="Cripsy">Cripsy</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Gluten-Free">Gluten-Free</option>
+                        </select>
+                    </div>
+                    <div class="down">    
+                        <select name="size" class="form-select form-select-ms" aria-label=".form-select-sm example">
+                            <option selected>-- Size --</option>
+                            <option value="large">Large</option>
+                            <option value="medium">Medium</option>
+                            <option value="small">Small</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="border-bottom cen">Select topping</div>
+                        <div class= "cen">
+                            <p>Don't be limited to other people's imaginations of a pizza topping!</p>
+                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="pepperoni" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Pepperoni topping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="italiano" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Italiano topping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="onion" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Onion topping</label>
+                    </div>
+                    </div>
+                    <div>
+                        <input name="quantity" class="form-control form-control-sm" type="number" min="1" placeholder="Quantity of pizzas" aria-label=".form-control-sm example">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </form>
+    
+                <form class="col pizza border p-5 m-3">
+                    <img src="images/pizza2.jpeg">
+                    <div class= "cen">
+                        <p>Don't be limited to other people's imaginations of a pizza crust!</p>
+                    </div>
+                    <div class="border-bottom cen">Select crust and size</div>
+                    <div>
+                        <select name="crust" class="form-select form-select-ms" aria-label=".form-select-sm example">
+                            <option selected>-- Crust --</option>
+                            <option value="Cripsy">Cripsy</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Gluten-Free">Gluten-Free</option>
+                        </select>
+                    </div>
+                    <div class="down">    
+                        <select name="size" class="form-select form-select-ms" aria-label=".form-select-sm example">
+                            <option selected>-- Size --</option>
+                            <option value="large">Large</option>
+                            <option value="medium">Medium</option>
+                            <option value="small">Small</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="border-bottom cen">Select topping</div>
+                        <div class= "cen">
+                            <p>Don't be limited to other people's imaginations of a pizza topping!</p>
+                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="pepperoni" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Pepperoni topping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="italiano" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Italiano topping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="onion" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Onion topping</label>
+                    </div>
+                    </div>
+                    <div>
+                        <input name="quantity" class="form-control form-control-sm" type="number" min="1" placeholder="Quantity of pizzas" aria-label=".form-control-sm example">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </form>
+    
+                <form class="col pizza border p-5 m-3">
+                    <img src="images/pizza3.jpeg">
+                    <div class= "cen">
+                        <p>Don't be limited to other people's imaginations of a pizza crust!</p>
+                    </div>
+                    <div class="border-bottom cen">Select crust and size</div>
+                    <div>
+                        <select name="crust" class="form-select form-select-ms" aria-label=".form-select-sm example">
+                            <option selected>-- Crust --</option>
+                            <option value="Cripsy">Cripsy</option>
+                            <option value="Stuffed">Stuffed</option>
+                            <option value="Gluten-Free">Gluten-Free</option>
+                        </select>
+                    </div>
+                    <div class="down">    
+                        <select name="size" class="form-select form-select-ms" aria-label=".form-select-sm example">
+                            <option selected>-- Size --</option>
+                            <option value="large">Large</option>
+                            <option value="medium">Medium</option>
+                            <option value="small">Small</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="border-bottom cen">Select topping</div>
+                        <div class= "cen">
+                            <p>Don't be limited to other people's imaginations of a pizza topping!</p>
+                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="pepperoni" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Pepperoni topping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="italiano" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Italiano topping</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="topping" type="checkbox" value="onion" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckDefault">Onion topping</label>
+                    </div>
+                    </div>
+                    <div>
+                        <input name="quantity" class="form-control form-control-sm" type="number" min="1" placeholder="Quantity of pizzas" aria-label=".form-control-sm example">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </form>
             </div>
-            <div>
-                <div>
-                    <h4 class="border-bottom">Choose Crust</h4>
-                    <img src="images/pizza4.jpeg">
-                    <p>Large pizza crust name and price</p>
-                    <table>
-                        <tr>
-                            <th>Crust name</th>
-                            <th>price</th>
-                        </tr>
-                        <tr>
-                            <td>Cripsy</td>
-                            <td>$15</td>
-                        </tr>
-                        <tr>
-                            <td>Stuffed</td>
-                            <td>$17</td>
-                        </tr>
-                        <tr>
-                            <td>Gluten free</td>
-                            <td>$19</td>
-                        </tr>
-                    </table>
-                    <select id="large-crust-select">
-                        <option value="cripsy">Cripsy</option>
-                        <option value="stuffed">Stuffed</option>
-                        <option value="gluten free">Gluten-Free</option>
-                    </select>
-                </div>
-                <div class="topping">
-                    <h4 class="border-bottom">Choose Topping</h4>
-                    <img src="images/pizzatopping3.jpeg.jpeg">
-                    <p>Large pizza topping name and price</p>
-                    <table class="align-left" id="largeTopping">
-                        <tr>
-                            <td><input type="checkbox" value="cheese">Cheese <span class="margin-left2">price $7</span><br></td>
-                        </tr>
-                       <tr>
-                           <td> <input type="checkbox" value="pepperoni">Pepperoni <span class="margin-left2">price $5</span><br></td>
-                       </tr>
-                       <tr>
-                           <td> <input type="checkbox" value="italiano">Italiano <span class="margin-left2">price $3</span></td>
-                       </tr>
-                    </table>
-                </div>
-                <a href="#top"><button id="submitOne">Submit Order</button></a>
             </div>
-        </div>
-        <div class="container cen width">
-           <div class="border-bottom">
-            <h3>Medium</h3>
-            <h4>Choose your crust and topping</h4>
-           </div>
-            <div>
-                <div>
-                    <h4 class="border-bottom">Choose Crust</h4>
-                    <img src="images/pizzacrast.jpeg">
-                    <p>Medium pizza crust name and price</p>
-                    <table>
-                        <tr>
-                            <th>Crust name</th>
-                            <th>price</th>
-                        </tr>
-                        <tr>
-                            <td>Cripsy</td>
-                            <td>$13</td>
-                        </tr>
-                        <tr>
-                            <td>Stuffed</td>
-                            <td>$14</td>
-                        </tr>
-                        <tr>
-                            <td>Gluten free</td>
-                            <td>$16</td>
-                        </tr>
-                    </table>
-                    <select id="medium-crust-select">
-                        <option>Cripsy</option>
-                        <option>Stuffed</option>
-                        <option>Gluten-Free</option>
-                    </select>
-                </div>
-                <div class="topping">
-                    <h4 class="border-bottom">Choose Topping</h4>
-                    <img src="images/pizzatopping2.jpeg">
-                    <p>Medium pizza topping name and price</p>
-                    <table class="align-left" id="mediumTopping">
-                        <tr>
-                            <td><input type="checkbox" value="cheese">Cheese <span class="margin-left2">price $5</span><br></td>
-                        </tr>
-                       <tr>
-                           <td> <input type="checkbox" value="pepperoni">Pepperoni <span class="margin-left2">price $3</span><br></td>
-                       </tr>
-                       <tr>
-                           <td> <input type="checkbox" value="italiano">Italiano <span class="margin-left2">price $2</span></td>
-                       </tr>
-                    </table>
-                </div>
-                <a href="#top"><button id="submitTwo">Submit Order</button></a>
-            </div>
-        </div>
-        <div class="container cen width">
-            <div class="border-bottom">
-                <h3>Small</h3>
-                <h4>Choose your crust and topping</h4>
-            </div>
-            <div>
-                <div>
-                    <h4 class="border-bottom">Choose Crust</h4>
-                    <img src="images/pizzacrast1.jpeg">
-                    <p>Small pizza crust name and price</p>
-                    <table>
-                        <tr>
-                            <th>Crust name</th>
-                            <th>price</th>
-                        </tr>
-                        <tr>
-                            <td>Cripsy</td>
-                            <td>$10</td>
-                        </tr>
-                        <tr>
-                            <td>Stuffed</td>
-                            <td>$13</td>
-                        </tr>
-                        <tr>
-                            <td>Gluten free</td>
-                            <td>$15</td>
-                        </tr>
-                    </table>
-                    <select id="small-crust-select">
-                        <option>Cripsy</option>
-                        <option>Stuffed</option>
-                        <option>Gluten-Free</option>
-                    </select>
-                </div>
-                <div class="topping">
-                    <h4 class="border-bottom">Choose Topping</h4>
-                    <img src="images/pizzatopping1.jpeg">
-                    <p>Small pizza topping name and price</p>
-                    <table class="align-left" id="smallTopping">
-                        <tr>
-                            <td><input type="checkbox" value="cheese">Cheese <span class="margin-left2">price $3</span><br></td>
-                        </tr>
-                       <tr>
-                           <td> <input type="checkbox" value="pepperoni">Pepperoni <span class="margin-left2">price $2</span><br></td>
-                       </tr>
-                       <tr>
-                           <td> <input type="checkbox" value="italiano">Italiano <span class="margin-left2">price $1</span></td>
-                       </tr>
-                    </table>
-                </div>
-                <a href="#top"><button id="submitThree">Submit Order</button></a>
-            </div>
-        </div>
-    </div>
-    </div>
+       </div>
     <div class="order">
        <div class="cen">
         <h1>Your have ordered:</h1>
